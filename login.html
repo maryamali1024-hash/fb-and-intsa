@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+
+        }
+
+        #logo {
+            width: 80px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: minmax(0, 57%) minmax(0, 43%);
+            height: 100vh;
+        }
+
+        .left {
+            padding: 30px 40px;
+            border-right: 2px solid grey;
+        }
+
+        .girl {
+            width: 480px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .explore {
+            font-size: 4vw;
+            font-weight: 600;
+            margin-top: 200px;
+            flex: 0 0 320px
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right form input {
+            width: 35vw;
+            height: 10vh;
+            display: block;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 25px 10px;
+            border: 1px solid rgb(201, 189, 189);
+            font-size: larger;
+        }
+
+        .right form input:focus {
+            border: 3px solid rgb(96, 96, 238);
+            /* background: red; */
+        }
+
+        .btn {
+            width: 35vw;
+            display: block;
+            padding: 10px 10px;
+            font-size: larger;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px 10px;
+
+        }
+
+        #login {
+            background: blue;
+            color: azure;
+            border: none;
+        }
+
+        #create {
+            border: 2px solid rgb(53, 53, 245);
+            background: white;
+            color: blue;
+            margin-top: 50px;
+        }
+
+        #forget {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            display: block;
+        }
+
+        #meta-logo {
+            width: 20px;
+        }
+
+        .meta-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <section class="left">
+            <img src="./assests/logo.png" alt="logo" id="logo">
+
+            <div class="content">
+                <h1 class="explore">Explore the things <span class="blue">you love</span>.</h1>
+
+                <img src="./assests/home.png" alt="" class="girl">
+
+
+            </div>
+        </section>
+
+        <section class="right">
+
+            <form>
+                <h3>Log in to Facebook
+                </h3>
+
+                <input type="email" placeholder="enter your email addres">
+                <input type="password" placeholder="enter your password">
+
+                <button class="btn" id="login">Log in</button>
+                <a href="./forgetPassword.html" id="forget">Forgetten password?</a>
+
+                <button class="btn" id="create">Create new Account</button>
+
+                <div class="meta-div">
+                    <img src="./assests/meta.png" alt="meta" id="meta-logo">
+                    Meta
+                </div>
+
+
+            </form>
+
+        </section>
+    </div>
+</body>
+
+</html>
